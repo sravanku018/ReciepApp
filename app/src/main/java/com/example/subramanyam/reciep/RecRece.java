@@ -66,6 +66,7 @@ public class RecRece extends RecyclerView.Adapter<RecRece.ViewHolder> {
                 intent.putExtra("arraylist2",array2);
 
 
+                intent.putExtra("serv",servings);
               intent.putExtra("arraylist",  array1);
               intent.putExtra("title",MainActivity.responseList.get(position).getName());
                 mContext.startActivity(intent);
