@@ -52,7 +52,7 @@ public class VideoDes extends Fragment {
 
         String video= this.getArguments().getString("videos");
         Log.i("videos",video);
-        if()
+
 
         videoView.setVideoURI(Uri.parse(video));
         videoView.getDuration();

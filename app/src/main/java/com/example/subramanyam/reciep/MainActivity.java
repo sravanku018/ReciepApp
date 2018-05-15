@@ -1,6 +1,8 @@
 package com.example.subramanyam.reciep;
 
 import android.os.Bundle;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 
@@ -70,8 +72,8 @@ public class MainActivity extends AppCompatActivity {
 
 
     public void init(android.support.v4.app.Fragment fragment) {
-        android.support.v4.app.FragmentManager fragmentManager = getSupportFragmentManager();
-        android.support.v4.app.FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+        FragmentManager fragmentManager = getSupportFragmentManager();
+        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
         fragmentTransaction.replace(R.id.FrameL, fragment);
         fragmentTransaction.commit();
     }
